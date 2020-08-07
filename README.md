@@ -3,4 +3,13 @@
     一个小工具，进行《从一个源目录移动文件到目标目录》
     
 # 使用说明：
-    仅仅是使用的话可以只直接下载根目录中的mvdir文件，然后赋予可执行权限，chmod +x mvdir ，最后就可以使用了
+    1. Linux系统：仅仅是使用的话可以只直接下载根目录中的mutumv文件，然后赋予可执行权限，chmod +x mutumv ，最后就可以使用了
+    2. Windows系统：仅仅是使用的话可以只直接下载根目录中的mutumv.exe文件，将mutumv.exe放到C:\Windows\System32目录下，然后在cmd中直接使用命令mutumv即可
+    
+# 命令说明：
+    Usage: mutumv [-from sourcedir] [-to target.dir]
+        Options:
+            -from string
+                源目录，从这个目录移动
+            -to string
+                目标目录，移动到这个目录下

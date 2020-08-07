@@ -4,7 +4,8 @@
     
 # 使用说明：
     1. Linux系统：仅仅是使用的话可以只直接下载根目录中的mutumv文件，然后赋予可执行权限，chmod +x mutumv ，最后就可以使用了
-    2. Windows系统：仅仅是使用的话可以只直接下载根目录中的mutumv.exe文件，将mutumv.exe放到C:\Windows\System32目录下，然后在cmd中直接使用命令mutumv即可
+    2. Windows系统：仅仅是使用的话可以只直接下载根目录中的mutumv.exe文件，将mutumv.exe放到C:\Windows\System32目录下，
+       然后在cmd中直接使用命令mutumv即可
     
     运行命令后会在执行命令的当前目录下形成一个日志，日志会记录详细的操作
     

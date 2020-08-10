@@ -3,11 +3,11 @@
     一个小工具，进行《从一个源目录移动文件到目标目录》，已经规避两个分区使用了不同的文件系统导致的 invalid cross-device link 错误
     
 # 使用说明：
-    1. Linux系统：仅仅是使用的话可以只直接下载根目录中的mutumv文件，然后赋予可执行权限，chmod +x mutumv ，最后就可以使用了
-    2. Windows系统：仅仅是使用的话可以只直接下载根目录中的mutumv.exe文件，将mutumv.exe放到C:\Windows\System32目录下，
+    1. Linux系统：直接下载根目录中的mutumv文件，然后赋予可执行权限，chmod +x mutumv ，最后就可以使用了
+    2. Windows系统：直接下载根目录中的mutumv.exe文件，将mutumv.exe放到C:\Windows\System32目录下，
        然后在cmd中直接使用命令mutumv即可
     
-    运行命令后会在执行命令的当前目录下形成一个日志，日志会记录详细的操作
+    运行命令后默认会在执行命令的当前目录下形成一个日志，日志会记录详细的操作
     
 # 命令说明：
     mutumv version: mutumv/1.0.0
@@ -26,3 +26,8 @@
             日志目录，默认当前目录
       -to string
             目标目录
+# 命令示例：
+
+    mutumv -from=/home/wangdianchen/testmv/123 -to=/home/wangdianchen/testmv/mubiao/ -logd=/home/wangdianchen/testmv/ -ldpass=false -lmkdir=false
+    or
+    mutumv  -help

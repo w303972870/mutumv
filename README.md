@@ -10,9 +10,19 @@
     运行命令后会在执行命令的当前目录下形成一个日志，日志会记录详细的操作
     
 # 命令说明：
+    mutumv version: mutumv/1.0.0
     Usage: mutumv [-from sourcedir] [-to target.dir]
-        Options:
-            -from string
-                源目录，从这个目录移动
-            -to string
-                目标目录，移动到这个目录下
+
+    Options:
+      -from string
+            源目录
+      -help
+            显示帮助
+      -ldpass
+            是否记录DIR PASS日志(目标目录中已经存在源中的目录会出现这类日志)，true：记录，false：不记录 (default true)
+      -lmkdir
+            是否记录MKDIR日志(是否记录创建文件夹的日志)，true：记录，false：不记录 (default true)
+      -logd string
+            日志目录，默认当前目录
+      -to string
+            目标目录

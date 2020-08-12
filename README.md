@@ -1,11 +1,7 @@
 # 项目背景：
     因业务需要，有一个目录迁移的需求，属于多层级mv，有接近2亿个文件，使用简单的mv命令无法进行文件移动，所以开发
-<<<<<<< HEAD
-    一个小工具，进行《从一个源目录移动文件到目标目录》，已经规避两个分区使用了不同的文件系统导致的 invalid cross-device link 错误
-=======
     一个小工具，进行《从一个源目录移动文件到目标目录》，已经规避两个分区使用了
     不同的文件系统导致的 invalid cross-device link 错误
->>>>>>> 49a47a850c63508f2aed09977e748c1c5cca7db9
     
 # 使用说明：
     1. Linux系统：直接下载根目录中的mutumv文件，然后赋予可执行权限，chmod +x mutumv ，最后就可以使用了
@@ -17,8 +13,9 @@
 # 命令说明：
     mutumv version: mutumv/1.0.0
     Usage: mutumv [-from sourcedir] [-to target.dir]
-
     Options:
+      -fdel
+            当正常移动失效，启用复制删除方式时，是否删除源文件，默认false不删除
       -from string
             源目录
       -help
@@ -33,15 +30,8 @@
             目标目录
 # 命令示例：
 
-<<<<<<< HEAD
-    mutumv -from=/home/wangdianchen/testmv/123 -to=/home/wangdianchen/testmv/mubiao/ -logd=/home/wangdianchen/testmv/ -ldpass=false -lmkdir=false
-    or
-=======
-    mutumv -from=/home/mutu/testmv/123 -to=/home/mutu/testmv/mubiao/ -logd=/home/mutu/testmv/ -ldpass=false -lmkdir=false
-    
-        
+    mutumv -from=/home/mutu/testmv/123 -to=/home/mutu/testmv/mubiao/ -logd=/home/mutu/testmv/  -ldpass=false -lmkdir=false -fdel=true
+          
         or
    
-   
->>>>>>> 49a47a850c63508f2aed09977e748c1c5cca7db9
     mutumv  -help

@@ -14,6 +14,8 @@
     mutumv version: mutumv/1.0.0
     Usage: mutumv [-from sourcedir] [-to target.dir]
     Options:
+      -+ int
+            增加多少最大同时处理的文件数,大于0小于5500，该配置是在基础值上加的数量，24核cpu以上基础值是5000，以下是1000
       -fdel
             当正常移动失效，启用复制删除方式时，是否删除源文件，默认false不删除
       -from string
@@ -30,7 +32,7 @@
             目标目录
 # 命令示例：
 
-    mutumv -from=/home/mutu/testmv/123 -to=/home/mutu/testmv/mubiao/ -logd=/home/mutu/testmv/  -ldpass=false -lmkdir=false -fdel=true
+    mutumv -from=/home/mutu/testmv/123 -to=/home/mutu/testmv/mubiao/ -logd=/home/mutu/testmv/  -ldpass=false -lmkdir=false -fdel=true -+=5000
           
         or
    
